@@ -36,5 +36,14 @@
     <ClCompile Include="..\src\libmusicFeature\sampleMaker.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\libmusicFeature\wavFileVector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libwavSegment\WaveReader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libwavSegment\WaveSegmenter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -173,7 +173,7 @@ inline void FileVector<T>::readDataFromFile()
 	std::ifstream fin(fileName_.c_str());
 	T fileValue;
 	// ignore wav header
-	fin.seekg(0x2c, ios::beg);
+	fin.seekg(0x2c, std::ios::beg);
 	while(fin >> fileValue){
 		dataVector_.push_back(fileValue);
 	}

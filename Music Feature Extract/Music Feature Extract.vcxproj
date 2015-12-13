@@ -89,7 +89,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../include;../include/musicFeature</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;../include/musicFeature;../include/waveSegment</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -122,7 +122,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../include;../include/musicFeature</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;../include/musicFeature;../include/waveSegment</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -158,6 +158,9 @@
     <ClCompile Include="..\src\libmusicFeature\featureExtract.cpp" />
     <ClCompile Include="..\src\libmusicFeature\sampleMaker.cpp" />
     <ClCompile Include="..\src\libmusicFeature\segmenter.cpp" />
+    <ClCompile Include="..\src\libmusicFeature\wavFileVector.cpp" />
+    <ClCompile Include="..\src\libwavSegment\WaveReader.cpp" />
+    <ClCompile Include="..\src\libwavSegment\WaveSegmenter.cpp" />
     <ClCompile Include="musicFeatureExtractMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

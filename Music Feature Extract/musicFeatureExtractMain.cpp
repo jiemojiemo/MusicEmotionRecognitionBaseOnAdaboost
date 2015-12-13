@@ -366,7 +366,3 @@ int main(int argc, char *argv[])
 	SampleMakerTest(label, inputFilePath);
 	//GetTrainningDataTest(label, inputFilePath);
 }
-
-
-
-

@@ -21,10 +21,12 @@ T Calcvariance(const vector<T>& vec)
 vector<int> GetFeatures()
 {
 	vector<int> featureIndexVec;
-	for (int i = 1; i <= 7; ++i)
-		featureIndexVec.push_back(i);
-	for (int i = 9; i <= 18; ++i)
-		featureIndexVec.push_back(i);
+	//for (int i = 1; i <= 7; ++i)
+	//	featureIndexVec.push_back(i);
+	//for (int i = 9; i <= 18; ++i)
+	//	featureIndexVec.push_back(i);
+	//for (int i = 21; i <= 29; ++i)
+	//	featureIndexVec.push_back(i);
 	featureIndexVec.push_back(40);
 	featureIndexVec.push_back(41);
 
@@ -59,6 +61,8 @@ void SampleMaker::Run(int numSegments)
 				m_result[i].push_back(Calcvariance(result));
 			else
 				m_result[i].push_back(result[0]);
+
+			std::cout << m_featureIndexArray[i] << " "<<m_result[i].back() << std::endl;
 		}
 	}
 }

@@ -106,7 +106,7 @@ class Domain{
 	int windowSize_; ///the size of each window over which to calculate domain values
 	string fileName_; /// the filename of the pcm file on which to operate
 
-	WavFileVector<int> pcmVec_; ///The fileVector of values from the pcm file
+	WavFileVector pcmVec_; ///The fileVector of values from the pcm file
 	ConfigFile settingsFile_; ///The configFile for the settings file
 
 	vector<double> calcFrequencyDomainWindow(vector<int> pcmWindow); ///Calculates the freq domain over a pcm window

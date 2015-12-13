@@ -95,7 +95,8 @@ using namespace std;
 **/
 Domain::Domain(string fileName, int windowSize)
 	:fileName_(fileName), 
-	windowSize_(windowSize){}
+	windowSize_(windowSize),
+	pcmVec_(fileName){}
 
 
 /** 
