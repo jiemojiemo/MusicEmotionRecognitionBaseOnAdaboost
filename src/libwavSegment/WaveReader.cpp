@@ -57,8 +57,8 @@ int WaveReader::ReadHeaderAndSigalData(bool verbose) {
 		wav_file.seekg(-DATA_HEADER_SIZE, ios::cur);
 		if (memcmp(m_header.data.data, "data", 4)) {
 			//we don't have a data ID
-			cerr << "found a non-data header, so skipping " << 1 <<
-				" bytes" << endl;
+			/*cerr << "found a non-data header, so skipping " << 1 <<
+				" bytes" << endl;*/
 			wav_file.seekg(1, ios::cur);
 		}
 		else {
@@ -82,7 +82,7 @@ int WaveReader::ReadHeaderAndSigalData(bool verbose) {
 
 void WaveReader::Setup()
 {
-	ReadHeaderAndSigalData(true);
+	ReadHeaderAndSigalData(false);
 }
 
 /* Print the existing header

@@ -27,7 +27,7 @@ void WavFileVector::readDataFromFile()
 	//fread(data, 1, fileSize, fd);
 	//int sampleCount = fileSize / sizeof(short);
 
-	////copy data to vector
+	//copy data to vector
 	//for (int i = 0; i < sampleCount; ++i)
 	//{
 	//	dataVector_.push_back(data[i]);

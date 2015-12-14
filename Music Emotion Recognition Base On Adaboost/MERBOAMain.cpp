@@ -1,13 +1,19 @@
 #include "MusicEmotionRecognizer.h"
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
-int main()
+int main(int argc, char* argv[])
 {
 	//MusicEmotionRecognizer recog({"123"});
-	vector<string> modelNames = {"123","456"};
+	vector<string> modelNames = {
+		"exci.txt.model",
+		"plea.txt.model",
+		"quie.txt.model",
+		"sad.txt.model"};
 	auto pRecog( make_unique<MusicEmotionRecognizer>(modelNames) );
-	pRecog->Predict("E:\\C++\\Music Emotion Recognition Base On Adaboost\\res\\plea\\plea_Bridgit Mendler - Ready Or Not0.wav");
+	auto result = pRecog->Predict(argv[1]);
+	cout << result << endl;
 	return 0;
 }
